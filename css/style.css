@@ -1,15 +1,15 @@
 :root{
-    --charcoal:#14161A;
-    --charcoal-2:#1C1F24;
-    --charcoal-3:#24282E;
-    --steel:#9CA6AD;
-    --steel-dim:#5C646B;
+    --charcoal:#004289;
+    --charcoal-2:#003569;
+    --charcoal-3:#002B54;
+    --steel:#B7B6B5;
+    --steel-dim:#646363;
     --offwhite:#F2EFE7;
-    --rebar:#C1502E;
-    --rebar-dark:#8F3A20;
-    --rebar-light:#E0714A;
-    --safety:#E8B23A;
-    --line:rgba(242,239,231,0.12);
+    --rebar:#FFDE14;
+    --rebar-dark:#E0C300;
+    --rebar-light:#FFE657;
+    --safety:#646363;
+    --line:rgba(242,239,231,0.14);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -48,7 +48,7 @@
   img{max-width:100%;display:block;}
   .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
   section{position:relative;}
-  ::selection{background:var(--rebar);color:var(--offwhite);}
+  ::selection{background:var(--rebar);color:var(--charcoal);}
 
   /* ===== NAV ===== */
   header{
@@ -123,7 +123,7 @@
     text-transform:uppercase;
     letter-spacing:0.05em;
     background:var(--rebar);
-    color:var(--offwhite);
+    color:var(--charcoal);
     padding:11px 20px;
     border-radius:2px;
     transition:background .2s;
@@ -138,7 +138,7 @@
     display:flex;align-items:center;
     padding-top:74px;
     background:
-      radial-gradient(ellipse 900px 500px at 78% 20%, rgba(193,80,46,0.16), transparent 60%),
+      radial-gradient(ellipse 900px 500px at 78% 20%, rgba(255,222,20,0.16), transparent 60%),
       var(--charcoal);
     position:relative;
     overflow:hidden;
@@ -172,7 +172,7 @@
   }
   .hero-ctas{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;}
   .btn-primary{
-    background:var(--rebar);color:var(--offwhite);
+    background:var(--rebar);color:var(--charcoal);
     font-family:'JetBrains Mono',monospace;
     text-transform:uppercase;font-size:0.85rem;letter-spacing:0.05em;
     padding:16px 28px;border-radius:2px;
@@ -187,7 +187,7 @@
     padding:16px 28px;border-radius:2px;
     transition:border-color .2s, background .2s;
   }
-  .btn-ghost:hover{border-color:var(--rebar-light);background:rgba(193,80,46,0.08);}
+  .btn-ghost:hover{border-color:var(--rebar-light);background:rgba(255,222,20,0.08);}
 
   /* rebar cage svg */
   .cage-wrap{position:relative;}
@@ -251,7 +251,8 @@
   /* ===== SECTION GENERIC ===== */
   .section{padding:120px 0;}
   .section.alt{background:var(--offwhite);color:var(--charcoal);}
-  .section.alt .eyebrow{color:var(--rebar);}
+  .section.alt .eyebrow{color:var(--charcoal);}
+  .section.alt .eyebrow::before{background:var(--charcoal);}
   .section.alt h2{color:var(--charcoal);}
   .section.alt p{color:#4A4640;}
   .section h2{font-size:clamp(2rem,3.6vw,3rem);max-width:14ch;}
@@ -312,16 +313,16 @@
     padding:26px 4px;border-bottom:1px solid rgba(20,22,26,0.14);
     transition:padding-left .2s;
   }
-  .role-row:hover{padding-left:12px;background:rgba(193,80,46,0.05);}
+  .role-row:hover{padding-left:12px;background:rgba(255,222,20,0.05);}
   .role-row h4{font-size:1.05rem;text-transform:none;letter-spacing:0;font-weight:700;}
-  .role-row .dept{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--rebar);letter-spacing:0.06em;text-transform:uppercase;margin-top:4px;display:block;}
+  .role-row .dept{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--charcoal);letter-spacing:0.06em;text-transform:uppercase;margin-top:4px;display:block;}
   .role-loc{font-family:'JetBrains Mono',monospace;font-size:0.82rem;color:#6b6660;}
   .role-apply{
     font-family:'JetBrains Mono',monospace;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.05em;
-    color:var(--rebar);border:1px solid var(--rebar);padding:9px 18px;border-radius:2px;white-space:nowrap;
+    color:var(--charcoal);border:1px solid var(--charcoal);padding:9px 18px;border-radius:2px;white-space:nowrap;
     transition:background .2s, color .2s;
   }
-  .role-apply:hover{background:var(--rebar);color:var(--offwhite);}
+  .role-apply:hover{background:var(--rebar);color:var(--charcoal);border-color:var(--rebar);}
 
   .apply-cta-box{
     margin-top:60px;background:var(--charcoal);color:var(--offwhite);
