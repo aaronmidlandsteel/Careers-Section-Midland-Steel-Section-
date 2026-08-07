@@ -195,21 +195,78 @@
 .grid-bg{
     position:absolute;
     inset:0;
+    pointer-events:none;
 
+    /* Large engineering blueprint grid */
     background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
 
-    background-size:90px 90px;
+        /* Secondary grid */
+        linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+
+    background-size:
+        120px 120px,
+        120px 120px,
+        24px 24px,
+        24px 24px;
+
+    background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0;
 
     mask-image:
         linear-gradient(
             to bottom,
-            rgba(0,0,0,.9),
-            rgba(0,0,0,.2),
-            transparent 100%);
+            rgba(0,0,0,.95) 0%,
+            rgba(0,0,0,.75) 55%,
+            transparent 100%
+        );
 
-    opacity:.45;
+    opacity:.4;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(255,255,255,.08),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(255,222,20,.05),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(0,0,0,.08) 100%
+        );
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            transparent 45%,
+            rgba(0,0,0,.22) 100%
+        );
 }
   .hero .wrap{
     display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px;align-items:center;
