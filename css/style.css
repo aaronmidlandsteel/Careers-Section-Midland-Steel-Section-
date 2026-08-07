@@ -87,35 +87,39 @@
   .dropdown:hover .caret{transform:rotate(225deg) translateY(2px);}
 
   .dropdown-menu{
-    position:absolute;top:100%;left:0;
-    min-width:220px;
+    position:absolute;top:100%;left:50%;
+    transform:translateX(-50%) translateY(-6px);
+    display:flex;
+    flex-direction:row;
+    width:max-content;
     background:var(--charcoal-2);
     border:1px solid var(--line);
     border-top:2px solid var(--rebar);
     padding:8px;
+    gap:4px;
     opacity:0;visibility:hidden;
-    transform:translateY(-6px);
     transition:opacity .18s ease, transform .18s ease, visibility .18s;
     box-shadow:0 20px 40px rgba(0,0,0,0.4);
   }
   .dropdown:hover .dropdown-menu,
   .dropdown:focus-within .dropdown-menu{
-    opacity:1;visibility:visible;transform:translateY(0);
+    opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);
   }
   .dropdown-menu a{
-    display:flex;align-items:baseline;gap:10px;
-    padding:11px 14px;
+    display:flex;flex-direction:column;align-items:flex-start;gap:6px;
+    padding:11px 16px;
     font-size:0.88rem;
     color:var(--offwhite);
     border-radius:3px;
-    transition:background .15s, padding-left .15s;
+    white-space:nowrap;
+    transition:background .15s;
   }
   .dropdown-menu a .num{
     font-family:'JetBrains Mono',monospace;
     font-size:0.7rem;
     color:var(--rebar-light);
   }
-  .dropdown-menu a:hover{background:var(--charcoal-3);padding-left:18px;}
+  .dropdown-menu a:hover{background:var(--charcoal-3);}
 
   .nav-cta{
     font-family:'JetBrains Mono',monospace;
@@ -352,8 +356,8 @@
     .navlinks.open{transform:translateX(0);}
     .navlinks > li{width:100%;}
     .dropdown-menu{position:static;opacity:1;visibility:visible;transform:none;border:none;background:none;
-      display:none;padding-left:14px;box-shadow:none;}
-    .dropdown.open .dropdown-menu{display:block;}
+      display:none;flex-direction:column;width:auto;padding-left:14px;box-shadow:none;}
+    .dropdown.open .dropdown-menu{display:flex;}
     .navtoggle{display:block;}
     .nav-cta{display:none;}
     .hero .wrap{grid-template-columns:1fr;}
