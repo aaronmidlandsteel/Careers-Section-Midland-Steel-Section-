@@ -24,7 +24,21 @@
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    background:var(--charcoal);
+    background:
+    radial-gradient(circle at top left,
+        rgba(255,255,255,.05),
+        transparent 45%),
+
+    radial-gradient(circle at bottom right,
+        rgba(255,222,20,.04),
+        transparent 55%),
+
+    linear-gradient(
+        180deg,
+        #003569 0%,
+        #002B54 40%,
+        #001B33 100%);
+      
     color:var(--offwhite);
     font-family:'Inter',sans-serif;
     line-height:1.6;
