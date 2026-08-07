@@ -61,19 +61,19 @@
     display:flex;align-items:center;justify-content:space-between;
     height:74px;
   }
+
 .logo{
     display:flex;
     align-items:center;
 }
 
 .logo img{
-    height:70px;   /* adjust as needed */
+    height:70px;    /* Adjust as needed */
     width:auto;
     display:block;
 }
 
   }
-  .logo span{color:var(--rebar-light);}
   .navlinks{display:flex;align-items:center;gap:6px;}
   .navlinks > li{list-style:none;position:relative;}
   .navlinks a.toplink{
