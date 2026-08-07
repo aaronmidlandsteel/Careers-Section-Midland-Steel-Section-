@@ -1,16 +1,26 @@
 :root{
     --MSNavyBlue:#004289;
     --Navy:#003569;
+
+    --charcoal:#001B33;
+    --charcoal-2:#002544;
     --charcoal-3:#002B54;
+
     --steel:#B7B6B5;
     --steel-dim:#646363;
-    --offwhite:#F2EFE7;
+
+    --offwhite:#F8F6F1;
+    --offwhite-2:#F3F0EA;
+    --offwhite-3:#ECE8E1;
+
     --rebar:#FFDE14;
     --rebar-dark:#E0C300;
     --rebar-light:#FFE657;
-    --safety:#646363;
-    --line:rgba(242,239,231,0.14);
-  }
+
+    --line:rgba(255,255,255,.06);
+}
+ 
+}
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
