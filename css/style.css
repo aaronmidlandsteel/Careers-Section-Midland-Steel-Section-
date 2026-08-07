@@ -163,13 +163,34 @@
   /* ===== HERO ===== */
   .hero{
     min-height:100svh;
-    display:flex;align-items:center;
+    display:flex;
+    align-items:center;
     padding-top:74px;
+
     background:
-      radial-gradient(ellipse 900px 500px at 78% 20%, rgba(255,222,20,0.16), transparent 60%),
-      var(--charcoal);
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(255,222,20,.16),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(255,255,255,.05),
+            transparent 45%
+        ),
+
+        linear-gradient(
+            135deg,
+            #004289 0%,
+            #003569 35%,
+            #002B54 70%,
+            #001B33 100%
+        );
+
     position:relative;
     overflow:hidden;
+}
   }
   .grid-bg{
     position:absolute;inset:0;
