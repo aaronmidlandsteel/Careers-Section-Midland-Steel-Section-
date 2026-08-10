@@ -454,6 +454,40 @@
   .pillar h4{font-size:1.02rem;text-transform:none;letter-spacing:0;margin:10px 0 8px;}
   .pillar p{font-size:0.9rem;color:var(--steel);}
 
+/* WHY JOIN */
+#why-join{background:var(--charcoal-2);}
+.benefits-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin-top:0;
+}
+.benefit{
+  background:var(--charcoal-2);
+  padding:38px 28px;
+}
+.benefit span{
+  font-family:'JetBrains Mono',monospace;
+  font-size:0.8rem;
+  color:var(--rebar-light);
+}
+.benefit h3{
+  font-size:1.05rem;
+  text-transform:none;
+  letter-spacing:0;
+  margin:14px 0 10px;
+}
+.benefit p{
+  color:var(--steel);
+  font-size:0.9rem;
+}
+
+@media (max-width:900px){
+  .benefits-grid{grid-template-columns:1fr;}
+}
+
   /* APPLY / ROLES */
   #apply{background:var(--offwhite);color:var(--charcoal);}
   .roles-list{border-top:1px solid rgba(20,22,26,0.14);}
