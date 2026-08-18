@@ -496,8 +496,13 @@
   .benefits-grid{grid-template-columns:1fr;}
 }
 
-  /* APPLY / ROLES */
-  #apply{background:var(--offwhite);color:var(--charcoal);}
+
+/* APPLY / ROLES */
+#apply{background:var(--offwhite);color:var(--charcoal);}
+#apply .eyebrow{color:var(--rebar);}
+
+.roles-list{border-top:1px solid rgba(20,22,26,0.14);}
+
   .roles-list{border-top:1px solid rgba(20,22,26,0.14);}
   .role-row{
     display:grid;grid-template-columns:1fr auto auto;gap:24px;align-items:center;
